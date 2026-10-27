@@ -149,4 +149,6 @@ npm run preview
 
 ## License
 
-This project is licensed under the Apache-2.0 License.
+This project is licensed under a **Source Available** license. All rights reserved by KoColor Maison. 
+
+The source code is provided for inspection, reference, and educational evaluation only. Unauthorized reproduction, distribution, sublicensing, or commercial deployment without explicit written permission is strictly prohibited.
