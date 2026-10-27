@@ -38,7 +38,7 @@ export default function VideoStreamModal({ isOpen, onClose }: VideoStreamModalPr
         {/* Real YouTube Video Player Viewport */}
         <div className="relative w-full aspect-video bg-black">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/arO5AMz_Y50?autoplay=1&rel=0&playsinline=1"
+            src="https://www.youtube-nocookie.com/embed/IbivppBEYMs?autoplay=1&rel=0&playsinline=1"
             title="KoColor Video Master"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
