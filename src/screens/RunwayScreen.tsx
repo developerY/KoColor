@@ -109,7 +109,7 @@ export const RunwayScreen: React.FC<RunwayScreenProps> = ({
           onClick={onOpenLiveStream}
           className="cursor-pointer bg-white text-[#004ac6] px-3 py-0.5 rounded-xs font-bold text-[10px] hover:bg-stone-100 transition-colors uppercase whitespace-nowrap ml-4 shrink-0"
         >
-          Watch Stream [18:42]
+          Watch Video [0:31]
         </button>
       </div>
 
@@ -217,7 +217,7 @@ export const RunwayScreen: React.FC<RunwayScreenProps> = ({
                 className="cursor-pointer bg-[#004ac6] hover:bg-[#003896] text-white px-8 py-4 text-xs font-mono font-bold uppercase tracking-[0.2em] transition-all flex items-center gap-3 shadow-xl hover:scale-102"
               >
                 <span className="material-symbols-outlined text-lg">play_circle</span>
-                <span>Watch Stream [18:42]</span>
+                <span>Watch Video [0:31]</span>
               </button>
 
               <button

@@ -779,7 +779,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           <div className="relative w-full aspect-video bg-black overflow-hidden shadow-2xl border border-stone-800 rounded-xs">
             <iframe
               className="w-full h-full border-0 absolute inset-0"
-              src="https://www.youtube.com/embed/W7gTx8q0e7A?autoplay=1&mute=1&loop=1&playlist=W7gTx8q0e7A&playsinline=1&rel=0&modestbranding=1"
+              src="https://www.youtube-nocookie.com/embed/IbivppBEYMs?autoplay=1&mute=1&loop=1&playlist=IbivppBEYMs&playsinline=1&rel=0&modestbranding=1"
               title="KoColor Living Runway Installation"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen

@@ -150,7 +150,7 @@ export const ApparelScreen: React.FC<ApparelScreenProps> = ({
                 className="cursor-pointer bg-[#004ac6] hover:bg-[#003896] text-white px-3 py-1 rounded text-[10px] font-bold uppercase transition-colors flex items-center gap-1"
               >
                 <span className="material-symbols-outlined text-xs">play_arrow</span>
-                <span>Stream [18:42]</span>
+                <span>Video [0:31]</span>
               </button>
             )}
           </div>

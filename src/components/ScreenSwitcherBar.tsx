@@ -76,10 +76,10 @@ export const ScreenSwitcherBar: React.FC<ScreenSwitcherBarProps> = ({
           <button
             onClick={onOpenLiveStream}
             className="cursor-pointer ml-1 hidden md:flex items-center gap-1 px-3 py-1.5 rounded-full bg-[#004ac6] hover:bg-[#003896] text-white text-[11px] font-mono tracking-wider transition-colors"
-            title="Watch SF & LA, CA SS27 Livestream"
+            title="Watch SF & LA, CA SS27 Video"
           >
             <span className="material-symbols-outlined text-sm">play_arrow</span>
-            <span>STREAM [18:42]</span>
+            <span>VIDEO [0:31]</span>
           </button>
         )}
       </div>
