@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Syne:wght@400..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#fcf8fb", "surface-container-highest": "#e5e1e4", "tertiary-fixed-dim": "#91db2a", "on-surface": "#1c1b1d", "error": "#ba1a1a", "on-tertiary-container": "#d3ff9b", "on-surface-variant": "#434655", "error-container": "#ffdad6", "on-error-container": "#93000a", "on-tertiary-fixed": "#102000", "tertiary": "#3a5f00", "inverse-on-surface": "#f3f0f2", "tertiary-fixed": "#acf847", "surface-container-lowest": "#ffffff", "on-background": "#1c1b1d", "surface-bright": "#fcf8fb", "on-secondary": "#ffffff", "primary": "#004ac6", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#783200", "on-secondary-fixed": "#341100", "inverse-primary": "#b4c5ff", "on-primary-container": "#eeefff", "on-primary-fixed": "#00174b", "outline": "#737686", "surface-container-low": "#f6f2f5", "inverse-surface": "#313032", "secondary-fixed": "#ffdbca", "secondary-fixed-dim": "#ffb690", "primary-fixed-dim": "#b4c5ff", "tertiary-container": "#4c7a00", "secondary": "#9d4300", "surface-tint": "#0053db", "outline-variant": "#c3c6d7", "surface-container-high": "#eae7ea", "primary-fixed": "#dbe1ff", "surface-dim": "#dcd9dc", "on-tertiary-fixed-variant": "#304f00", "surface-variant": "#e5e1e4", "surface-container": "#f0edf0", "on-secondary-container": "#5c2400", "on-error": "#ffffff", "on-primary": "#ffffff", "on-primary-fixed-variant": "#003ea8", "secondary-container": "#fd761a", "primary-container": "#2563eb", "surface": "#fcf8fb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "3rem", "space-md": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xl": "4rem", "gutter-mobile": "0.75rem", "gutter": "1.5rem", "space-lg": "2rem" }, "fontFamily": { "headline-lg": [ "Bodoni Moda" ], "display-hero-mobile": [ "Bodoni Moda" ], "label-sm": [ "Syne" ], "headline-md": [ "Bodoni Moda" ], "label-lg": [ "Syne" ], "display-hero": [ "Bodoni Moda" ], "headline-lg-mobile": [ "Bodoni Moda" ], "headline-md-mobile": [ "Bodoni Moda" ], "title-md": [ "Syne" ], "body-md": [ "Syne" ], "title-lg": [ "Syne" ], "headline-sm": [ "Syne" ], "body-lg": [ "Syne" ] }, "fontSize": { "headline-lg": [ "56px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "display-hero-mobile": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "10px", { "lineHeight": "12px", "letterSpacing": "0.18em", "fontWeight": "800" } ], "headline-md": [ "36px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-lg": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" } ], "display-hero": [ "96px", { "lineHeight": "96px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-lg-mobile": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600" } ], "title-md": [ "15px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "title-lg": [ "18px", { "lineHeight": "24px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "headline-sm": [ "22px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="bg-inverse-surface text-inverse-on-surface px-margin-mobile lg:px-margin py-1.5 flex items-center justify-between text-center overflow-hidden border-b border-outline/20"><div class="hidden lg:block w-32 text-left"><span class="font-label-sm text-label-sm uppercase tracking-widest text-inverse-on-surface/70">PARIS / TOKYO</span></div><p class="font-label-sm text-label-sm uppercase tracking-[0.2em] mx-auto truncate">SS25 CHROMATIC RUNWAY CAPSULE IS NOW LIVE — COMPLIMENTARY WORLDWIDE EXPRESS SHIPPING OVER $300</p><div class="hidden lg:flex w-32 justify-end items-center gap-space-sm"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span><span class="font-label-sm text-label-sm uppercase tracking-widest text-inverse-on-surface/80">LIVE EDITION</span></div></div><div class="h-20 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-3 group" data-path="home" href="#"><img alt="KoColor Fashion Logo" class="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VThOe5-a3PhFaxat5tJK8zts9jTiQyEv9L6JP1QUW5_Fk7b_c3wb0GGqGpY7nLfiLg4XGZYQQoYDyGwWF3bD0MZ_Xc5VyUXqXgIY9jJF5CLdMZ29EHm-EN3kjs2u0ztEKOm4RosRXqzulATqo3XCi5MiHhUlEJ2f3t28lZeE0CaOQUlr9-a1VYZkXW_Sx_L9O9zWxXmohuEgJo_Xt12X_LSRuIcSFoPAjQLFZl-UDeTAXq6GP3-kGpuyM"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase hidden sm:inline-block">KOCOLOR</span></a><span class="font-label-sm text-label-sm uppercase px-2 py-0.5 border border-outline-variant text-on-surface-variant hidden xl:inline-block">MAISON 01</span></div><nav class="hidden lg:flex items-center gap-6 xl:gap-8" data-active-classes="text-primary font-bold border-b-2 border-primary pb-1"><a aria-current="page" class="uppercase transition-colors text-primary font-bold border-b-2 border-primary pb-1" data-path="new-arrivals" href="#">New Arrivals</a><a class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="runway-ss25" href="#">Runway SS25</a><a class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="color-editions" href="#">Color Editions</a><a class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="collections" href="#">Collections</a><a class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="editorial-journal" href="#">Editorial Journal</a><a class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a></nav><div class="flex items-center gap-3 sm:gap-4 shrink-0"><button class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface border border-outline-variant/60 transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="hidden xl:inline font-label-sm text-label-sm uppercase tracking-wider">Search Catalog</span><kbd class="hidden sm:inline font-label-sm text-[9px] px-1.5 py-0.5 bg-surface border border-outline-variant text-on-surface-variant">⌘K</kbd></button><div class="relative hidden sm:flex items-center"><select class="appearance-none bg-transparent pl-2 pr-5 py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface cursor-pointer focus:outline-none"><option value="USD">USD $</option><option value="EUR">EUR €</option><option value="JPY">JPY ¥</option></select><span class="material-symbols-outlined text-[14px] pointer-events-none absolute right-1 text-on-surface-variant">expand_more</span></div><a class="relative p-1.5 text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[9px] flex items-center justify-center font-bold">2</span></a><a class="flex items-center gap-1.5 px-2.5 py-1.5 bg-surface-container text-on-surface border border-outline-variant/60 hover:bg-surface-container-high transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Bag [1]</span></a><a class="p-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="account" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="w-full pt-28 bg-background flex-grow"><div class="flex flex-col w-full">
+<!-- Top Utility Context Bar / Breadcrumbs -->
+<section class="w-full px-margin-mobile lg:px-margin pt-4 pb-6">
+<div class="flex flex-wrap items-center justify-between gap-4">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline">/</span>
+<a class="hover:text-primary transition-colors" href="#">Outerwear</a>
+<span class="text-outline">/</span>
+<a class="hover:text-primary transition-colors" href="#">Trench Coats</a>
+<span class="text-outline">/</span>
+<span class="text-on-surface font-bold">Chromatic Scuba Trench</span>
+</nav>
+<div class="flex items-center gap-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+          Runway Look 07 / 42
+        </span>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span>Share</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Product Detail Split Section -->
+<section class="w-full px-margin-mobile lg:px-margin pb-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<!-- Left Column: Editorial Multi-Image Gallery -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Interactive Main Stage -->
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Editorial avant-garde high fashion photograph of a statuesque runway model wearing the Yves Cobalt blue sculptural oversized trench coat in bonded scuba fabric. The coat features architectural shoulder lines, high collar structure, and sharp industrial tailoring. Shot against a warm minimalist concrete Paris couture set with soft directional daylighting, vibrant rich pigment fidelity, and striking graphic shadows." id="main-product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkexFmfpKq8s5Otc0ViJYbdgQQ1gUES1998YTwiXoD_dhHf5Gz5MG5vbdFfN8aCwuxiZanI7_JBlaL-jTQkF3Cq4SHQsch0sM52CaAa-eF46E4_eZe_gCVo-q2EQWxQF4fBod8gnGHODp9VOnCMLrUmNDD-mQe9XIsTWl64ZiaGuH9YGccx6px0a9qH6KHeJjZe790ZNEJwa87xEUNmrh879iz1AJMzT7V_mUzhhGLfAcAPI63HbLR"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2 pointer-events-none">
+<span class="px-3 py-1 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-widest shadow-sm">
+              LOOK 07 • RUNWAY SS25
+            </span>
+<span class="px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest shadow-sm">
+              NEW ATELIER RELEASE
+            </span>
+</div>
+<div class="absolute bottom-4 right-4 flex items-center gap-2">
+<button aria-label="Expand view" class="w-10 h-10 flex items-center justify-center bg-surface/90 backdrop-blur-md text-on-surface hover:bg-on-surface hover:text-surface transition-colors shadow-sm" id="zoom-trigger-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">fullscreen</span>
+</button>
+</div>
+<!-- Subtle Angle Index Indicator -->
+<div class="absolute bottom-4 left-4 bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface px-3 py-1 font-label-sm text-label-sm tracking-widest">
+<span id="active-photo-counter">01</span> / 04
+          </div>
+</div>
+<!-- Thumbnail Selector Bar -->
+<div class="grid grid-cols-4 gap-3 sm:gap-4">
+<button class="gallery-thumb-btn aspect-[3/4] relative overflow-hidden bg-surface-container ring-2 ring-primary transition-all duration-200" data-alt="Editorial avant-garde high fashion photograph of a statuesque runway model wearing the Yves Cobalt blue sculptural oversized trench coat in bonded scuba fabric. The coat features architectural shoulder lines, high collar structure, and sharp industrial tailoring. Shot against a warm minimalist concrete Paris couture set with soft directional daylighting, vibrant rich pigment fidelity, and striking graphic shadows." data-src="placeholder" onclick="switchGalleryImage(0, this)" type="button">
+<img class="w-full h-full object-cover" data-alt="Editorial avant-garde high fashion photograph of a statuesque runway model wearing the Yves Cobalt blue sculptural oversized trench coat in bonded scuba fabric. The coat features architectural shoulder lines, high collar structure, and sharp industrial tailoring. Shot against a warm minimalist concrete Paris couture set with soft directional daylighting, vibrant rich pigment fidelity, and striking graphic shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx_sOEsGAOw8VLSFywygFkFYajdog0z8I1Lft9LAvxmaHNjq0lFEhmlRNOoZQGkO35fNq2papifjng4-hSBFWWQKQLjY5srv3REARnHckD_Csw2U5LYJmlDdh7wvbdcOdLp3oBQUIlCUIh-4BGTgRS_tHmN8Vb4Nk9CHFB-FE-NKG7og90K6hvbPhpoGbJ9QnqcTtTm9H4qEMA4wv9THUxBy1W6OUBXWnGD9edQ3zPd58DKLIedBbj"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] uppercase px-1 bg-surface/80 text-on-surface">Front</span>
+</button>
+<button class="gallery-thumb-btn aspect-[3/4] relative overflow-hidden bg-surface-container opacity-70 hover:opacity-100 transition-all duration-200" data-alt="Dynamic side profile of a runway model in rapid motion wearing the dynamic Yves Cobalt scuba trench coat. The structured hem flares organically in mid-stride revealing geometric tangerine lining and sharp hand-finished contrast seam binding. High fashion runway catwalk setting with dramatic backlighting and motion energy." data-src="placeholder" onclick="switchGalleryImage(1, this)" type="button">
+<img class="w-full h-full object-cover" data-alt="Dynamic side profile of a runway model in rapid motion wearing the dynamic Yves Cobalt scuba trench coat. The structured hem flares organically in mid-stride revealing geometric tangerine lining and sharp hand-finished contrast seam binding. High fashion runway catwalk setting with dramatic backlighting and motion energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ2Rl1z2W7rpx-lnM_g4ww4rkmXfvt7SsH5XAFwXCzYPx9FM1BBg-HnShjvJdThTK9d1CNZ8MGU6Rtzv_YmMVMNxpuSdy8qiPaHWzjM_7Cqs24iTXfaNQDuekerlOJ47juWnFkM8A64C252Xs8PoNtVrhF22ltfb0jlVvzrHX1WxRK-aMEporULJEqEFcfqlS75VfpqXstL2NUn1UqJ1uwZz0KTWMa_owFl-nn86USqVosoj4YaiFP"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] uppercase px-1 bg-surface/80 text-on-surface">Motion</span>
+</button>
+<button class="gallery-thumb-btn aspect-[3/4] relative overflow-hidden bg-surface-container opacity-70 hover:opacity-100 transition-all duration-200" data-alt="Ultra close-up macro portrait of the high structural stand collar of the Yves Cobalt blue trench coat. Depicting bespoke sculptural metal hardware, tonal matte eyelets, and laser-precise chromatic blue micro-stitching against pure architectural scuba wool textile." data-src="placeholder" onclick="switchGalleryImage(2, this)" type="button">
+<img class="w-full h-full object-cover" data-alt="Ultra close-up macro portrait of the high structural stand collar of the Yves Cobalt blue trench coat. Depicting bespoke sculptural metal hardware, tonal matte eyelets, and laser-precise chromatic blue micro-stitching against pure architectural scuba wool textile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrA3o36BX9g8rL13Q9sJZFkBpp6loCbPXRE379PK1cPG4Q2JIozyCr_YOBWOPSNJPrds5kjU6rdXwlC93L9r9DiXioMDo2et7vmFFvZ0NGhqJASEKsWvwByiWZBnBO_tO0y3HcMKIzR_XkA4vRQPvB_FZ2eZbwXziWmjuB_zNWMQRy06TfjUGuZSOIYTtVcrSG192g3hZsN4sQFoYzwDJj5wSd-mP34oyGCJuG5wMYZa-pTOsI3bsl"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] uppercase px-1 bg-surface/80 text-on-surface">Collar</span>
+</button>
+<button class="gallery-thumb-btn aspect-[3/4] relative overflow-hidden bg-surface-container opacity-70 hover:opacity-100 transition-all duration-200" data-alt="Extreme macro tactile shot of the double-bonded scuba technical wool fabric weave in vibrant electric Yves Cobalt blue. Showing rich woven fiber texture, fine matte density, micro-weave pattern, water-repellent droplet beading, and exceptional couture material richness under studio raking light." data-src="placeholder" onclick="switchGalleryImage(3, this)" type="button">
+<img class="w-full h-full object-cover" data-alt="Extreme macro tactile shot of the double-bonded scuba technical wool fabric weave in vibrant electric Yves Cobalt blue. Showing rich woven fiber texture, fine matte density, micro-weave pattern, water-repellent droplet beading, and exceptional couture material richness under studio raking light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXJru3ePWaWCpQAW81nbwi2Yy24lmgDBLMn6spqXtXubl8HLldaPavoSOGDqUiYW5jRobUp2CoGPdiBah2wA8VJiCy90VsdJ3YU_UEFo7N1HjaOcrswJu9t8RJ1tSk0sehQo2yCh2IOBM3wB-r61AxbwC0-vg9qhf20HpFpQNR_XQ9Z-BvsQ2oqmtLnSnml5CLltGd-2Ehjxn4yGtTa2urg3HYe752i8FH4NmGRHh7kVXJWWQPAwXa"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] uppercase px-1 bg-surface/80 text-on-surface">Textile</span>
+</button>
+</div>
+<!-- Editorial Atmosphere Quote Banner -->
+<div class="p-6 bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Atelier Note</p>
+<p class="font-title-md text-title-md text-on-surface italic">"A dialogue between classical double-breasted tailoring and contemporary scuba neoprene tension."</p>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant shrink-0">Milan Runway Atelier</span>
+</div>
+</div>
+<!-- Right Column: Sticky Commercial Rail -->
+<div class="lg:col-span-5 lg:sticky lg:top-32 flex flex-col gap-8">
+<!-- Header Info Block -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary font-bold">
+              SS25 RUNWAY EXCLUSIVE • COLLECTION PIECE #07
+            </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm uppercase text-secondary">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+              High Demand
+            </span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+            Chromatic Scuba Trench Coat
+          </h1>
+<div class="flex items-baseline gap-4 pt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$1,280 USD</span>
+<span class="font-body-md text-body-md text-on-surface-variant">VAT &amp; Import Duties Included</span>
+</div>
+<!-- Split Payment Notice -->
+<div class="p-3 bg-surface-container-low text-on-surface flex items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-[11px] font-bold uppercase tracking-wider text-primary">Klarna.</span>
+<p class="font-body-md text-xs text-on-surface-variant">or 4 interest-free payments of <strong>$320.00</strong></p>
+</div>
+<button class="font-label-sm text-[10px] uppercase underline text-on-surface hover:text-primary" type="button">Info</button>
+</div>
+</div>
+<!-- Color Selector Block -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">
+              Color: <span class="font-normal text-on-surface-variant" id="color-name-display">Yves Cobalt Blue</span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Iconic Formula</span>
+</div>
+<div class="flex items-center gap-3">
+<!-- Yves Cobalt (Active) -->
+<button aria-label="Select Yves Cobalt Blue" class="color-swatch-btn relative w-9 h-9 rounded-full bg-[#004ac6] ring-2 ring-primary ring-offset-2 ring-offset-background transition-transform hover:scale-105" onclick="selectColor('Yves Cobalt Blue', this)" type="button">
+<span class="sr-only">Yves Cobalt</span>
+</button>
+<!-- Sunburst Tangerine -->
+<button aria-label="Select Sunburst Tangerine" class="color-swatch-btn relative w-9 h-9 rounded-full bg-[#fd761a] ring-1 ring-outline-variant/60 hover:ring-2 hover:ring-secondary ring-offset-2 ring-offset-background transition-transform hover:scale-105" onclick="selectColor('Sunburst Tangerine', this)" type="button">
+<span class="sr-only">Sunburst Tangerine</span>
+</button>
+<!-- Acid Citron -->
+<button aria-label="Select Acid Citron" class="color-swatch-btn relative w-9 h-9 rounded-full bg-[#acf847] ring-1 ring-outline-variant/60 hover:ring-2 hover:ring-tertiary-container ring-offset-2 ring-offset-background transition-transform hover:scale-105" onclick="selectColor('Acid Citron', this)" type="button">
+<span class="sr-only">Acid Citron</span>
+</button>
+<!-- Obsidian Void -->
+<button aria-label="Select Obsidian Void" class="color-swatch-btn relative w-9 h-9 rounded-full bg-[#1c1b1d] ring-1 ring-outline-variant/60 hover:ring-2 hover:ring-on-surface ring-offset-2 ring-offset-background transition-transform hover:scale-105" onclick="selectColor('Obsidian Void', this)" type="button">
+<span class="sr-only">Obsidian Void</span>
+</button>
+</div>
+</div>
+<!-- Size Selector Block -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Select Size</span>
+<button class="flex items-center gap-1 font-label-sm text-label-sm uppercase tracking-wider text-primary hover:underline" onclick="toggleSizeGuideModal()" type="button">
+<span class="material-symbols-outlined text-[16px]">straighten</span>
+<span>Find Your Fit / Size Guide</span>
+</button>
+</div>
+<div class="grid grid-cols-5 gap-2" id="size-options-container">
+<button class="size-btn py-3 text-center bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg uppercase transition-colors" onclick="selectSize('XS', this)" type="button">
+              XS
+            </button>
+<button class="size-btn py-3 text-center bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg uppercase transition-colors" onclick="selectSize('S', this)" type="button">
+              S
+            </button>
+<button class="size-btn relative py-3 text-center bg-primary text-on-primary font-label-lg text-label-lg uppercase transition-colors" onclick="selectSize('M', this)" type="button">
+              M
+              <span class="absolute -top-2 left-1/2 -translate-x-1/2 px-1.5 py-0.2 bg-secondary text-on-secondary font-label-sm text-[8px] uppercase tracking-tighter whitespace-nowrap">
+                Low Stock
+              </span>
+</button>
+<button class="size-btn py-3 text-center bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg uppercase transition-colors" onclick="selectSize('L', this)" type="button">
+              L
+            </button>
+<button class="size-btn py-3 text-center bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg uppercase transition-colors" onclick="selectSize('XL', this)" type="button">
+              XL
+            </button>
+</div>
+<p class="font-body-md text-xs text-on-surface-variant flex items-center gap-1.5 pt-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">check_circle</span>
+            Oversized silhouette cut. Model is 5'11" (180cm) wearing size S.
+          </p>
+</div>
+<!-- Call To Actions -->
+<div class="space-y-3 pt-2">
+<div class="flex gap-3">
+<button class="flex-1 py-4 px-6 bg-primary text-on-primary hover:bg-on-surface hover:text-surface transition-all duration-300 font-label-lg text-label-lg uppercase tracking-widest flex items-center justify-center gap-3 shadow-lg active:scale-[0.99]" id="add-to-bag-button" onclick="handleAddToBag()" type="button">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span id="bag-btn-text">Add to Bag • $1,280</span>
+</button>
+<button aria-label="Add to wishlist" class="w-14 h-14 bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center shrink-0" id="wishlist-toggle-btn" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[22px]" id="wishlist-icon">favorite_border</span>
+</button>
+</div>
+<div class="flex items-center justify-center gap-2 py-2 text-center">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+              Only 4 garments remain in Milan vault for Yves Cobalt (Size M)
+            </span>
+</div>
+</div>
+<!-- Atelier Value Props List -->
+<div class="grid grid-cols-2 gap-3 p-4 bg-surface-container-low text-on-surface">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">precision_manufacturing</span>
+<span class="font-label-sm text-[11px] uppercase tracking-wider font-bold">Crafted in Milan Atelier</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">water_drop</span>
+<span class="font-label-sm text-[11px] uppercase tracking-wider font-bold">Bonded Scuba Shield</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">palette</span>
+<span class="font-label-sm text-[11px] uppercase tracking-wider font-bold">Hand-Piped Contrast Seams</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">flight_takeoff</span>
+<span class="font-label-sm text-[11px] uppercase tracking-wider font-bold">Free Insured Courier</span>
+</div>
+</div>
+<!-- Accordion Specifications -->
+<div class="space-y-2 pt-2">
+<!-- Accordion 1 -->
+<div class="bg-surface-container-low overflow-hidden">
+<button class="w-full p-4 flex items-center justify-between text-left font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:bg-surface-container transition-colors" onclick="toggleAccordion('acc-tailoring', this)" type="button">
+<span>Design &amp; Tailoring Architecture</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 space-y-2 font-body-md text-body-md text-on-surface-variant" id="acc-tailoring">
+<p>• Monolithic silhouette sculpted from 480gsm double-bonded technical scuba wool.</p>
+<p>• Architectural throat latch with branded zinc-alloy gunmetal hardware buckle.</p>
+<p>• Raglan sleeve construction with deep articulated elbow darting for dynamic kinetic drape.</p>
+<p>• Oversized storm flap at back with internal air ventilation mesh paneling.</p>
+<p>• Removable 50mm bonded statement belt with concealed magnetic clasp.</p>
+</div>
+</div>
+<!-- Accordion 2 -->
+<div class="bg-surface-container-low overflow-hidden">
+<button class="w-full p-4 flex items-center justify-between text-left font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:bg-surface-container transition-colors" onclick="toggleAccordion('acc-fabric', this)" type="button">
+<span>Fabric Composition &amp; Garment Care</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 space-y-2 font-body-md text-body-md text-on-surface-variant" id="acc-fabric">
+<p>• Outer Shell: 68% Virgin Fine Merino Wool, 28% Recycled Polyamide, 4% Elastane.</p>
+<p>• Bonding Membrane: 100% Breathable Micro-Polyurethane weather barrier.</p>
+<p>• Interior Facing: 100% Cupro Bemberg satin weave in contrast Tangerine.</p>
+<p>• Care: Specialized luxury dry clean only. Steam with low temperature garment wand. Do not tumble dry.</p>
+</div>
+</div>
+<!-- Accordion 3 -->
+<div class="bg-surface-container-low overflow-hidden">
+<button class="w-full p-4 flex items-center justify-between text-left font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:bg-surface-container transition-colors" onclick="toggleAccordion('acc-sustainability', this)" type="button">
+<span>Sustainable Dye Provenance</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 space-y-2 font-body-md text-body-md text-on-surface-variant" id="acc-sustainability">
+<p>• The signature Yves Cobalt chromatic hue is achieved through a closed-loop hyper-pigment immersion process in Biella, Italy.</p>
+<p>• 94% reduced fresh water usage compared to standard reactive textile dying protocols.</p>
+<p>• Oeko-Tex Standard 100 Class 1 certified pigments guaranteeing zero heavy metal contamination.</p>
+</div>
+</div>
+<!-- Accordion 4 -->
+<div class="bg-surface-container-low overflow-hidden">
+<button class="w-full p-4 flex items-center justify-between text-left font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:bg-surface-container transition-colors" onclick="toggleAccordion('acc-shipping', this)" type="button">
+<span>Shipping &amp; Complimentary Returns</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 space-y-2 font-body-md text-body-md text-on-surface-variant" id="acc-shipping">
+<p>• Complimentary DHL Express global air shipping (Estimated arrival: 2-3 business days).</p>
+<p>• Delivered in custom KoColor archival garment preservation bag with solid ash hanger.</p>
+<p>• 14-day worldwide concierge return window with complimentary scheduled home pickup.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete The Runway Silhouette Section -->
+<section class="w-full bg-surface-container-low py-16 px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10">
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary font-bold">Runway Curation • Complete The Look</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Complete The Runway Silhouette</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Styled directly from Paris Runway Look #07. Curated companion elements tailored to balance volumetric outerwear with liquid drape and sharp leather accessories.
+      </p>
+</div>
+<!-- 3-Column Styling Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+<!-- Look Item 1: Liquid Silk Trouser -->
+<div class="bg-surface-container-lowest flex flex-col group">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Editorial lookbook photograph of wide-leg flowing luxury trousers crafted in luminous heavy liquid silk in neutral alabaster pearl color. Paired against dramatic runway shadow styling, showcasing fluid fluid fabric weight and crisp front pleat tailoring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtPo0hx9uirDd5Vpb7WNuOW0YIAwGWrO5gDuJMtpI5onhNAb85SALtqLobc1dJ65dET8Axku4xFP0KpHUP0cO7p1v-8ho72-1DePaYRM3wl7s8mzSKXm5PohR7JEGqMeJ3xySqTsMZ_diJHV-p7bmEIggG-OlIOgFbmNNk7iz8MFu9zFMmjnoJjS5U6c8VNVHA_M5pj_Q07UWEx0VZwBEKbcQMazrkQScLJAbhlu6FW198zF513UGY"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface text-on-surface font-label-sm text-[9px] uppercase tracking-wider">
+            RUNWAY LOOK PIECE
+          </span>
+<button class="absolute bottom-3 right-3 px-3 py-1.5 bg-surface/90 backdrop-blur-md text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" type="button">
+            Quick Add
+          </button>
+</div>
+<div class="p-5 flex flex-col justify-between flex-grow gap-4">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Bottoms / Trousers</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Liquid Silk High-Rise Trouser</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">32mm Mulberry fluid silk with deep double-knife front pleats.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">$620 USD</span>
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold">In Stock</span>
+</div>
+</div>
+</div>
+<!-- Look Item 2: Prism Leather Mule -->
+<div class="bg-surface-container-lowest flex flex-col group">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-contrast luxury editorial product photograph of sculptural women's pointed-toe leather mules. Obsidian polished calfskin leather with a geometric cobalt prism heel and minimalist chrome hardware. Photographed on a reflective dark studio plinth with sharp studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8HwgQ8kRMtRUvRX3qDq4dBaIr-zJYjBOtlLAMj8oJzW1IB6_NtfowIEo2X45lwKa80snapkVghQwMahpb9LLM76YI4pN8XVH4-bDv8SiX2qoU3VQAh5vnq6FSiyPXSQcIye5jZfhSiyA_QS3bQHIl7dMuhbYFPKRbVoBasoBl97avW6xKCBB2tJU7iFMAoj3B2LPxL0Kqr-Tb9Qp1vs0t9r0VHNKzz6bPQGRfeEtA6i41KtC1ARVr"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-secondary-container text-on-secondary font-label-sm text-[9px] uppercase tracking-wider">
+            RUNWAY FOOTWEAR
+          </span>
+<button class="absolute bottom-3 right-3 px-3 py-1.5 bg-surface/90 backdrop-blur-md text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" type="button">
+            Quick Add
+          </button>
+</div>
+<div class="p-5 flex flex-col justify-between flex-grow gap-4">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Footwear / Mules</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Prism Leather Architectural Mule</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">70mm sculpted resin heel with Italian polished box-calf leather upper.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">$790 USD</span>
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold">Limited Run</span>
+</div>
+</div>
+</div>
+<!-- Look Item 3: Chroma Eyewear -->
+<div class="bg-surface-container-lowest flex flex-col group">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Avant-garde designer sunglasses with thick beveled electric blue Italian acetate frames and warm amber high-contrast UV lenses. Floating against a stark luminous editorial backdrop, emphasizing sharp beveled contour cuts and metal wire core detailing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUnxjzVENIATUoscauyAzIG4QncAa08ZWf-y4y4vaIURZuAnPgdXnfqqVFiW7wsPhGiv_2stSgYgXZrUT3jbBuyK85bN1_4FAtnndkCm_FMvJsGTUZoycldQBeBwHw64M-ddwgnhTDPJyUIhT6fws1dQ8ibr9xoQIshW6HCFD1ulyFfQ1ZhnE1KHIyP5ann021q1I96W5GcSUEhRKxGgUrxbxPZIzhS9vu0fP2IV7FuXEDJRET7b0V"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface text-on-surface font-label-sm text-[9px] uppercase tracking-wider">
+            EYEWEAR EDITION
+          </span>
+<button class="absolute bottom-3 right-3 px-3 py-1.5 bg-surface/90 backdrop-blur-md text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" type="button">
+            Quick Add
+          </button>
+</div>
+<div class="p-5 flex flex-col justify-between flex-grow gap-4">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Accessories / Eyewear</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Chroma 01 Beveled Sunglasses</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Custom 8mm Japanese acetate frame with hand-polished mirror finish.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">$440 USD</span>
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold">In Stock</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Complete Ensemble Summary Banner -->
+<div class="mt-8 p-6 bg-surface-container flex flex-col lg:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<span class="w-12 h-12 flex items-center justify-center bg-primary text-on-primary">
+<span class="material-symbols-outlined text-[24px]">auto_fix_high</span>
+</span>
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface">Purchase Full Runway Look #07 Ensemble</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Includes Scuba Trench, Silk Trouser, Leather Mule, and Chroma Eyewear.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 w-full lg:w-auto justify-end">
+<div class="text-right">
+<p class="font-label-sm text-[10px] uppercase text-on-surface-variant line-through">$3,130 USD</p>
+<p class="font-title-lg text-title-lg text-on-surface font-bold">$2,810 USD</p>
+</div>
+<button class="px-6 py-3 bg-on-surface text-surface hover:bg-primary hover:text-on-primary transition-colors font-label-lg text-label-lg uppercase tracking-wider whitespace-nowrap" type="button">
+          Acquire Entire Silhouette (10% Atelier Saving)
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Dimensional Size Guide Modal Container -->
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4" id="size-guide-modal">
+<div class="bg-surface text-on-surface max-w-2xl w-full p-8 shadow-2xl space-y-6 relative max-h-[921px] overflow-y-auto">
+<div class="flex items-center justify-between border-b pb-4">
+<h3 class="font-headline-sm text-headline-sm uppercase">Atelier Sizing &amp; Dimensional Chart</h3>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="toggleSizeGuideModal()" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        The Chromatic Scuba Trench is engineered with an exaggerated sculptural cut. If you prefer a tailored, classical posture, we recommend taking one size smaller than your standard size.
+      </p>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-sm">
+<thead>
+<tr class="bg-surface-container text-on-surface font-label-sm uppercase tracking-wider">
+<th class="p-3">Size</th>
+<th class="p-3">Chest (in/cm)</th>
+<th class="p-3">Shoulder (in/cm)</th>
+<th class="p-3">Length (in/cm)</th>
+<th class="p-3">Sleeve (in/cm)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/30">
+<tr>
+<td class="p-3 font-bold">XS</td>
+<td class="p-3 text-on-surface-variant">38" / 96cm</td>
+<td class="p-3 text-on-surface-variant">18.5" / 47cm</td>
+<td class="p-3 text-on-surface-variant">47.2" / 120cm</td>
+<td class="p-3 text-on-surface-variant">33.0" / 84cm</td>
+</tr>
+<tr class="bg-surface-container-low">
+<td class="p-3 font-bold">S</td>
+<td class="p-3 text-on-surface-variant">40" / 102cm</td>
+<td class="p-3 text-on-surface-variant">19.2" / 49cm</td>
+<td class="p-3 text-on-surface-variant">48.0" / 122cm</td>
+<td class="p-3 text-on-surface-variant">33.8" / 86cm</td>
+</tr>
+<tr class="bg-primary/5 text-primary font-bold">
+<td class="p-3">M (Selected)</td>
+<td class="p-3">42" / 108cm</td>
+<td class="p-3">20.0" / 51cm</td>
+<td class="p-3">48.8" / 124cm</td>
+<td class="p-3">34.6" / 88cm</td>
+</tr>
+<tr class="bg-surface-container-low">
+<td class="p-3 font-bold">L</td>
+<td class="p-3 text-on-surface-variant">45" / 114cm</td>
+<td class="p-3 text-on-surface-variant">20.8" / 53cm</td>
+<td class="p-3 text-on-surface-variant">49.6" / 126cm</td>
+<td class="p-3 text-on-surface-variant">35.4" / 90cm</td>
+</tr>
+<tr>
+<td class="p-3 font-bold">XL</td>
+<td class="p-3 text-on-surface-variant">48" / 122cm</td>
+<td class="p-3 text-on-surface-variant">21.6" / 55cm</td>
+<td class="p-3 text-on-surface-variant">50.4" / 128cm</td>
+<td class="p-3 text-on-surface-variant">36.2" / 92cm</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex justify-end pt-2">
+<button class="px-6 py-2.5 bg-on-surface text-surface font-label-lg text-label-lg uppercase" onclick="toggleSizeGuideModal()" type="button">
+          Got It
+        </button>
+</div>
+</div>
+</div>
+<!-- Inline Micro-interactions Script -->
+<script>
+    function switchGalleryImage(index, buttonElement) {
+      const mainImg = document.getElementById('main-product-image');
+      const counter = document.getElementById('active-photo-counter');
+      const altPrompt = buttonElement.getAttribute('data-alt');
+      
+      if (mainImg) {
+        mainImg.setAttribute('data-alt', altPrompt);
+        // Force re-render visual swap
+        mainImg.classList.add('opacity-80');
+        setTimeout(() => mainImg.classList.remove('opacity-80'), 150);
+      }
+      if (counter) {
+        counter.textContent = '0' + (index + 1);
+      }
+
+      const allThumbs = document.querySelectorAll('.gallery-thumb-btn');
+      allThumbs.forEach(btn => {
+        btn.classList.remove('ring-2', 'ring-primary', 'opacity-100');
+        btn.classList.add('opacity-70');
+      });
+
+      buttonElement.classList.add('ring-2', 'ring-primary', 'opacity-100');
+      buttonElement.classList.remove('opacity-70');
+    }
+
+    function selectColor(colorName, element) {
+      const display = document.getElementById('color-name-display');
+      if (display) display.textContent = colorName;
+
+      const swatches = document.querySelectorAll('.color-swatch-btn');
+      swatches.forEach(btn => {
+        btn.classList.remove('ring-2', 'ring-primary', 'ring-secondary', 'ring-tertiary-container', 'ring-on-surface');
+        btn.classList.add('ring-1', 'ring-outline-variant/60');
+      });
+
+      element.classList.remove('ring-1', 'ring-outline-variant/60');
+      element.classList.add('ring-2', 'ring-primary');
+    }
+
+    function selectSize(sizeCode, element) {
+      const buttons = document.querySelectorAll('.size-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+
+      element.classList.remove('bg-surface-container-low', 'text-on-surface');
+      element.classList.add('bg-primary', 'text-on-primary');
+    }
+
+    function toggleWishlist(btn) {
+      const icon = document.getElementById('wishlist-icon');
+      if (icon) {
+        const isFilled = icon.textContent === 'favorite';
+        icon.textContent = isFilled ? 'favorite_border' : 'favorite';
+        icon.classList.toggle('text-secondary', !isFilled);
+      }
+    }
+
+    function handleAddToBag() {
+      const btn = document.getElementById('add-to-bag-button');
+      const text = document.getElementById('bag-btn-text');
+      if (text) {
+        text.textContent = 'Added to Bag (Look 07)';
+        btn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+        setTimeout(() => {
+          text.textContent = 'Add to Bag • $1,280';
+          btn.classList.remove('bg-tertiary-container', 'text-on-tertiary-container');
+        }, 2000);
+      }
+    }
+
+    function toggleAccordion(id, btn) {
+      const target = document.getElementById(id);
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (target) {
+        const isHidden = target.classList.contains('hidden');
+        target.classList.toggle('hidden', !isHidden);
+        if (icon) {
+          icon.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+      }
+    }
+
+    function toggleSizeGuideModal() {
+      const modal = document.getElementById('size-guide-modal');
+      if (modal) {
+        modal.classList.toggle('hidden');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40 mt-space-xl"><div class="w-full px-margin-mobile lg:px-margin pt-16 pb-12"><div class="grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-x-gutter pb-16 border-b border-outline-variant/40"><div class="lg:col-span-5 space-y-6"><p class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary font-bold">Chromatic Guild</p><h3 class="font-headline-md text-headline-md text-on-surface leading-tight">Join the Color Guild for secret drops and private runway previews.</h3><form class="flex flex-col sm:flex-row gap-0 max-w-md pt-2"><input class="w-full bg-surface-container-lowest border border-on-surface px-4 py-3.5 font-label-sm text-label-sm uppercase tracking-widest text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-1 focus:ring-primary" placeholder="ENTER YOUR EMAIL ADDRESS" type="email"/><button class="px-8 py-3.5 bg-on-surface text-surface-container-lowest hover:bg-primary hover:text-on-primary transition-colors font-label-lg text-label-lg uppercase shrink-0" type="submit">Subscribe</button></form><p class="font-body-md text-body-md text-on-surface-variant text-xs">By subscribing you accept our terms, privacy protocol, and couture release notices.</p></div><div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-4 gap-8"><div class="space-y-4"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Shop</h4><ul class="space-y-2.5 font-body-md text-body-md text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a data-path="new-arrivals" href="#">New Arrivals</a></li><li class="hover:text-on-surface transition-colors"><a data-path="runway-ss25" href="#">Runway SS25</a></li><li class="hover:text-on-surface transition-colors"><a data-path="color-editions" href="#">Color Editions</a></li><li class="hover:text-on-surface transition-colors"><a data-path="collections" href="#">Prêt-à-Porter</a></li><li class="hover:text-on-surface transition-colors"><a data-path="collections" href="#">Accessories &amp; Footwear</a></li><li class="hover:text-on-surface transition-colors"><a data-path="color-editions" href="#">Archival Pieces</a></li></ul></div><div class="space-y-4"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Maison</h4><ul class="space-y-2.5 font-body-md text-body-md text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a data-path="about" href="#">The Atelier</a></li><li class="hover:text-on-surface transition-colors"><a data-path="editorial-journal" href="#">Editorial Journal</a></li><li class="hover:text-on-surface transition-colors"><a data-path="runway-ss25" href="#">Runway Archive</a></li><li class="hover:text-on-surface transition-colors"><a data-path="about" href="#">Manifesto</a></li><li class="hover:text-on-surface transition-colors"><a data-path="about" href="#">Careers &amp; Residencies</a></li></ul></div><div class="space-y-4"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Client Care</h4><ul class="space-y-2.5 font-body-md text-body-md text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a data-path="account" href="#">Couture Concierge</a></li><li class="hover:text-on-surface transition-colors"><a data-path="account" href="#">Shipping &amp; Global Returns</a></li><li class="hover:text-on-surface transition-colors"><a data-path="account" href="#">Bespoke Garment Care</a></li><li class="hover:text-on-surface transition-colors"><a data-path="account" href="#">Authentication Card</a></li><li class="hover:text-on-surface transition-colors"><a data-path="account" href="#">Book Private Appointment</a></li></ul></div><div class="space-y-4"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Circularity</h4><ul class="space-y-2.5 font-body-md text-body-md text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a data-path="about" href="#">Ecological Indigo Dye</a></li><li class="hover:text-on-surface transition-colors"><a data-path="about" href="#">Zero-Waste Cut Program</a></li><li class="hover:text-on-surface transition-colors"><a data-path="about" href="#">Couture Resale Vault</a></li><li class="hover:text-on-surface transition-colors"><a data-path="about" href="#">Material Provenance</a></li></ul></div></div></div><div class="py-12 border-b border-outline-variant/30 flex flex-col md:flex-row items-start md:items-end justify-between gap-6"><span class="font-display-hero text-headline-lg md:text-display-hero font-bold tracking-tighter uppercase text-on-surface/90 select-none">KOCOLOR</span><div class="flex flex-wrap items-center gap-6 font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Instagram</a><a class="hover:text-primary transition-colors" href="#">TikTok</a><a class="hover:text-primary transition-colors" href="#">Pinterest</a><a class="hover:text-primary transition-colors" href="#">YouTube</a></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider"><div class="flex items-center gap-6"><p>© 2025 KOCOLOR MAISON S.A. ALL RIGHTS RESERVED.</p><span class="hidden md:inline text-outline-variant">|</span><div class="flex gap-4"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Sale</a><a class="hover:text-on-surface transition-colors" href="#">Cookie Protocol</a></div></div><div class="flex items-center gap-4 text-on-surface"><span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span>SHIPPING TO UNITED STATES</span></div></div></div></footer></body></html>

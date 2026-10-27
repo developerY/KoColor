@@ -1,0 +1,6 @@
+{
+  "name": "KoColor Maison | SS25 Chromatic Symphony",
+  "description": "KoColor is an AI Tech Fashion House where everything is built with AI. Algorithmic haute couture, neural pattern synthesis, in-silico bioactive cosmetics, and zero-waste generative tailoring in SF & LA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
